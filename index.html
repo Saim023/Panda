@@ -17,7 +17,7 @@
 	<body>
 		<header class="container">
 			<!-- Navbar Starts -->
-			<nav class="navbar navbar-expand-lg bg-light">
+			<nav class="navbar navbar-expand-lg fixed-top bg-light">
 				<div class="container">
 					<a class="navbar-brand" href="#"
 						><img src="images/logo.png" alt=""
@@ -39,13 +39,13 @@
 								<a class="nav-link active" aria-current="page" href="#">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Shoes</a>
+								<a class="nav-link" href="#shoes">Shoes</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Backpack</a>
+								<a class="nav-link" href="#backpack">Backpack</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Subscribe</a>
+								<a class="nav-link" href="#subscribe">Subscribe</a>
 							</li>
 						</ul>
 					</div>
@@ -60,7 +60,7 @@
 					data-bs-ride="carousel"
 				>
 					<div class="carousel-inner">
-						<div class="carousel-item active border rounded bg-info p-5">
+						<div class="carousel-item active border rounded panda-bg p-5">
 							<div class="row">
 								<div class="col-lg-7 d-flex align-items-center">
 									<div>
@@ -71,7 +71,7 @@
 											iure possimus sequi rem
 										</p>
 										<h2>$420</h2>
-										<div class="btn btn-warning">Buy Now</div>
+										<div class="btn panda-btn-buy-now">Buy Now</div>
 									</div>
 								</div>
 								<div class="col-lg-5">
@@ -83,7 +83,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item border rounded bg-info p-5">
+						<div class="carousel-item border rounded panda-bg p-5">
 							<div class="row">
 								<div class="col-lg-7 d-flex align-items-center">
 									<div>
@@ -94,19 +94,19 @@
 											iure possimus sequi rem
 										</p>
 										<h2>$1200</h2>
-										<div class="btn btn-warning">Buy Now</div>
+										<div class="btn panda-btn-buy-now">Buy Now</div>
 									</div>
 								</div>
 								<div class="col-lg-5">
 									<img
-										src="images/banner-images/tv.png"
+										src="images/banner-images/tv-removebg-preview.png"
 										class="d-block w-100"
 										alt="..."
 									/>
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item border rounded bg-info p-5">
+						<div class="carousel-item border rounded panda-bg p-5">
 							<div class="row">
 								<div class="col-lg-7 d-flex align-items-center">
 									<div>
@@ -117,7 +117,7 @@
 											iure possimus sequi rem
 										</p>
 										<h2>$750</h2>
-										<div class="btn btn-warning">Buy Now</div>
+										<div class="btn panda-btn-buy-now">Buy Now</div>
 									</div>
 								</div>
 								<div class="col-lg-5">
@@ -156,8 +156,8 @@
 		<main>
 			<!-- Categories Start -->
 			<section>
-				<div class="container text-center my-5">
-					<div class="row g-2">
+				<div class="container text-center my-5 categories">
+					<div class="row g-4">
 						<!-- Single Category -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div
@@ -190,7 +190,8 @@
 			</section>
 			<!-- Categories End -->
 			<!-- Shoes Section Start -->
-			<section class="container my-5">
+			<section id="shoes" class="container my-5">
+				<h2>Shoes</h2>
 				<div class="row row-cols-1 row-cols-md-2 row-cols-3 g-4">
 					<div class="col">
 						<div class="card border border-0 shadow-lg h-100">
@@ -201,6 +202,7 @@
 							/>
 							<div class="card-body">
 								<h5 class="card-title">Syply 350</h5>
+								<h2>$160</h2>
 								<p class="card-text">
 									This is a wider card with supporting text below as a natural
 									lead-in to additional content. This content is a little bit
@@ -208,7 +210,7 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
@@ -221,13 +223,14 @@
 							/>
 							<div class="card-body">
 								<h5 class="card-title">Nike 360</h5>
+								<h2>$120</h2>
 								<p class="card-text">
 									This card has supporting text below as a natural lead-in to
 									additional content.
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
@@ -240,6 +243,7 @@
 							/>
 							<div class="card-body">
 								<h5 class="card-title">Red Airmax</h5>
+								<h2>$130</h2>
 								<p class="card-text">
 									This is a wider card with supporting text below as a natural
 									lead-in to additional content. This card has even longer
@@ -247,14 +251,104 @@
 								</p>
 							</div>
 							<div class="m-3">
-								<div class="btn btn-warning">Buy Now</div>
+								<div class="btn panda-btn-buy-now">Buy Now</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- Shoes Section Start -->
+			<!-- Shoes Section End -->
+			<!-- Backpack Area Start -->
+			<section id="backpack" class="container my-5">
+				<h2>Backpack</h2>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-3 g-4">
+					<div class="col">
+						<div class="card border border-0 shadow-lg h-100">
+							<img src="images/bags/bag-1.png" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Red Travel</h5>
+								<h2>$140</h2>
+								<p class="card-text">
+									This is a wider card with supporting text below as a natural
+									lead-in to additional content. This content is a little bit
+									longer.
+								</p>
+							</div>
+							<div class="m-3">
+								<div class="btn panda-btn-buy-now">Buy Now</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card border border-0 shadow-lg h-100">
+							<img src="images/bags/bag-2.png" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">SkyBlue</h5>
+								<h2>$170</h2>
+								<p class="card-text">
+									This card has supporting text below as a natural lead-in to
+									additional content.
+								</p>
+							</div>
+							<div class="m-3">
+								<div class="btn panda-btn-buy-now">Buy Now</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card border border-0 shadow-lg h-100">
+							<img src="images/bags/bag-3.png" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Black Traveller</h5>
+								<h2>$160</h2>
+								<p class="card-text">
+									This is a wider card with supporting text below as a natural
+									lead-in to additional content. This card has even longer
+									content than the first to show that equal height action.
+								</p>
+							</div>
+							<div class="m-3">
+								<div class="btn panda-btn-buy-now">Buy Now</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Backpack Area Ends -->
+			<!-- Subscribes Area Start -->
+			<section
+				style="height: 300px"
+				class="container panda-bg rounded-3 d-flex justify-content-center align-items-center"
+				id="subscribe"
+			>
+				<div>
+					<h2>Let's Stay In Touch</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+					<form>
+						<div class="mb-2">
+							<input
+								type="email"
+								class="form-control"
+								id="exampleInputEmail1"
+								aria-describedby="emailHelp"
+							/>
+						</div>
+
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</section>
+			<!-- Subscribes Area End -->
 		</main>
+		<footer class="mt-5 text-center">
+			<p>
+				<small
+					>© Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+					at.</small
+				>
+			</p>
+		</footer>
 
 		<!-- Bootstrap Script CDN -->
 		<script
